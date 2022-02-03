@@ -6,12 +6,11 @@ import { useChangeLanguage } from "../hooks/change-language.hook";
 import { useMemo } from "react";
 
 export default function IndexPage() {
-  const { t, lang } = useChangeLanguage();
+  const { t } = useChangeLanguage();
 
   const articles = useMemo(
     () => t("articles", {}, { returnObjects: true }) as IArticle[],
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [lang]
+    [t]
   );
 
   return (
