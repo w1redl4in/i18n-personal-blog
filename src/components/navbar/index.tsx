@@ -1,5 +1,5 @@
 import { Box, Flex, Heading, useColorModeValue } from "@chakra-ui/react";
-import { useChangeLanguage } from "../../pages/hooks/change-language.hook";
+import { useChangeLanguage } from "../../hooks/change-language.hook";
 import { NavbarButtons } from "./buttons";
 export function Navbar() {
   const background = useColorModeValue("gray.200", "gray.700");
