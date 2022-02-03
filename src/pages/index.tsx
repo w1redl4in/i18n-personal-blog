@@ -5,12 +5,13 @@ import { IArticle } from "../types/article";
 import { useChangeLanguage } from "./hooks/change-language.hook";
 import { useMemo } from "react";
 
-const IndexPage = () => {
+export default function IndexPage() {
   const { t, lang } = useChangeLanguage();
 
   const articles = useMemo(
     () => t("articles", {}, { returnObjects: true }) as IArticle[],
-    [lang]
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [lang, t]
   );
 
   return (
@@ -30,6 +31,4 @@ const IndexPage = () => {
       </Flex>
     </>
   );
-};
-
-export default IndexPage;
+}

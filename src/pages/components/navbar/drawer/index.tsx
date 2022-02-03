@@ -44,8 +44,9 @@ export function NavbarDrawer({ isOpen, onClose }: NavbarDrawerProps) {
             >
               {t("general.changeColorText")}
             </Button>
-            {buttons.map((button) => (
+            {buttons.map((button, key) => (
               <IconButton
+                key={key}
                 responsive={button.responsive}
                 locale={button.locale as "pt" | "en" | "es"}
                 imagePath={button.imagePath}

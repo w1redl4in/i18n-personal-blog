@@ -18,7 +18,7 @@ export function useChangeLanguage(type?: string) {
       isClosable: true,
       position: isLessThan600px ? "top-left" : "bottom-right",
     });
-  }, [lang]);
+  }, [isLessThan600px, lang, t, toast]);
 
   return {
     t,
