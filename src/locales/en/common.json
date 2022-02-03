@@ -1,0 +1,42 @@
+{
+  "general": {
+    "appName": "Personal Blog",
+    "changeColorText": "Change color theme",
+    "closeText": "Close",
+    "detailsText": "Details",
+    "availableLanguages": {
+      "message": "Language changed successfully",
+      "en": "English",
+      "pt": "Portuguese",
+      "es": "Spanish"
+    }
+  },
+  "articles": [
+    {
+      "author": "Felipe austríaco",
+      "originalSource": "https://dev.to/w1redl4in/criando-seu-proprio-tema-com-styled-components-1h10",
+      "originalSourceText": "Continue reading on the original post...",
+      "date": "abril 6 - 2021",
+      "title": "Creating your own theme with styled-components",
+      "description": "Theme is the colors, font sizes, spacing between application elements and whatever else you want.",
+      "textBody": [
+        {
+          "subtitle": "What is theme",
+          "text": "Theme is the colors, font sizes, spacing between application elements and whatever else you want."
+        },
+        {
+          "subtitle": "Why waste time with this, I can't just apply it all through css?",
+          "text": "Yes it can, the problem is that it can snowball. With each new component you use different measures for margins and paddings, lighter or darker colors and different font sizes, making the application have no stylization pattern."
+        },
+        {
+          "subtitle": "What are the positives of using a theme?",
+          "text": "The application will follow a pattern of colors, sizes and measurements. Less redundant CSS while maintaining cleaner code. Changes such as colors, font size, etc. are trivial, as every application looks for theme information."
+        },
+        {
+          "subtitle": "Okay, so how do I create a Theme?",
+          "text": "Well, let's go then. In this article we are using styled-components and I will assume you are using Typescript (please be :D) to type-check our theme."
+        }
+      ]
+    }
+  ]
+}

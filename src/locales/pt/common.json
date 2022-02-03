@@ -1,0 +1,42 @@
+{
+  "general": {
+    "appName": "Blog Pessoal",
+    "changeColorText": "Trocar cor do tema",
+    "closeText": "Fechar",
+    "detailsText": "Detalhes",
+    "availableLanguages": {
+      "message": "Linguagem alterada com sucesso",
+      "en": "Inglês",
+      "pt": "Português",
+      "es": "Espanhol"
+    }
+  },
+  "articles": [
+    {
+      "author": "Felipe austríaco",
+      "originalSource": "https://dev.to/w1redl4in/criando-seu-proprio-tema-com-styled-components-1h10",
+      "originalSourceText": "Continue lendo na postagem original...",
+      "date": "abril 6 - 2021",
+      "title": "Criando seu próprio tema com styled-components",
+      "description": "Tema são as cores, tamanhos de fontes, espaçamento entre elementos da aplicação e o que mais você quiser.",
+      "textBody": [
+        {
+          "subtitle": "O que é tema",
+          "text": "Tema são as cores, tamanhos de fontes, espaçamento entre elementos da aplicação e o que mais você quiser."
+        },
+        {
+          "subtitle": "Porquê perder tempo com isso, não posso só aplicar tudo isso pelo css?",
+          "text": "Pode sim, o problema é que pode virar uma bola de neve. A cada componente novo você usa medidas diferentes para margins e paddings, cores mais claras ou escuras e tamanhos de fontes divergentes, fazendo com que a aplicação não tenha nenhum padrão de estilização."
+        },
+        {
+          "subtitle": "Quais os pontos positivos ao usar um tema?",
+          "text": "A aplicação seguirá um padrão de cores, tamanhos e medidas. Menos CSS redundante, mantendo um código mais limpo. Alterações como cores, tamanho de fontes e etc são triviais, já que toda aplicação busca informações do tema."
+        },
+        {
+          "subtitle": "Certo, então como crio um Tema?",
+          "text": "Bom, vamos lá então. Nesse artigo estamos usando styled-components e irei supor que você está usando Typescript (por favor, esteja :D) para ter o type-checking do nosso tema."
+        }
+      ]
+    }
+  ]
+}

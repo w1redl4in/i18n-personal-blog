@@ -1,0 +1,42 @@
+{
+  "general": {
+    "appName": "Persona Blog",
+    "changeColorText": "Cambiar tema de color",
+    "closeText": "Cerca",
+    "detailsText": "Detalles",
+    "availableLanguages": {
+      "message": "Idioma cambiado correctamente",
+      "en": "Inglesa",
+      "pt": "Portuguesa",
+      "es": "Español"
+    }
+  },
+  "articles": [
+    {
+      "author": "Felipe austríaco",
+      "originalSource": "https://dev.to/w1redl4in/criando-seu-proprio-tema-com-styled-components-1h10",
+      "originalSourceText": "Seguir leyendo en la publicación original...",
+      "date": "abril 6 - 2021",
+      "title": "Creando tu propio tema con componentes con estilo",
+      "description": "El tema son los colores, los tamaños de fuente, el espacio entre los elementos de la aplicación y cualquier otra cosa que desee.El tema son los colores, los tamaños de fuente, el espacio entre los elementos de la aplicación y cualquier otra cosa que desee.",
+      "textBody": [
+        {
+          "subtitle": "Que es el tema",
+          "text": "El tema son los colores, los tamaños de fuente, el espacio entre los elementos de la aplicación y cualquier otra cosa que desee."
+        },
+        {
+          "subtitle": "¿Por qué perder el tiempo con esto, no puedo simplemente aplicarlo todo a través de css?",
+          "text": "Sí se puede, el problema es que se puede hacer bola de nieve. Con cada nuevo componente, utiliza diferentes medidas para márgenes y rellenos, colores más claros o más oscuros y diferentes tamaños de fuente, lo que hace que la aplicación no tenga un patrón de estilización."
+        },
+        {
+          "subtitle": "¿Cuáles son los aspectos positivos de usar un tema?",
+          "text": "La aplicación seguirá un patrón de colores, tallas y medidas. CSS menos redundante manteniendo un código más limpio. Los cambios como colores, tamaño de fuente, etc. son triviales, ya que cada aplicación busca información sobre el tema."
+        },
+        {
+          "subtitle": "Bien, entonces, ¿cómo creo un tema?",
+          "text": "Bueno, vamos entonces. En este artículo, estamos usando componentes con estilo y asumiré que está usando Typescript (por favor sea :D) para verificar el tipo de nuestro tema."
+        }
+      ]
+    }
+  ]
+}
