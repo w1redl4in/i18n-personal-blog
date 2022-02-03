@@ -11,7 +11,7 @@ export default function IndexPage() {
   const articles = useMemo(
     () => t("articles", {}, { returnObjects: true }) as IArticle[],
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [lang, t]
+    [lang]
   );
 
   return (

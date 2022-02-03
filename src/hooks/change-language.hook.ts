@@ -18,7 +18,8 @@ export function useChangeLanguage(type?: string) {
       isClosable: true,
       position: isLessThan600px ? "top-left" : "bottom-right",
     });
-  }, [isLessThan600px, lang, t, toast]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lang]);
 
   return {
     t,
