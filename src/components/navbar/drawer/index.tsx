@@ -11,8 +11,8 @@ import {
   useColorMode,
   Stack,
 } from "@chakra-ui/react";
-import { buttons } from "../../../../types/navbar.buttons";
-import { useChangeLanguage } from "../../../hooks/change-language.hook";
+import { buttons } from "../../../types/navbar.buttons";
+import { useChangeLanguage } from "../../../pages/hooks/change-language.hook";
 import { IconButton } from "../buttons/icon-button";
 
 interface NavbarDrawerProps {

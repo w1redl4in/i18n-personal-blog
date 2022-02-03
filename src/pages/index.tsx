@@ -1,6 +1,6 @@
 import { Flex } from "@chakra-ui/react";
-import { Article } from "./components/article";
-import { Navbar } from "./components/navbar";
+import { Article } from "../components/article";
+import { Navbar } from "../components/navbar";
 import { IArticle } from "../types/article";
 import { useChangeLanguage } from "./hooks/change-language.hook";
 import { useMemo } from "react";

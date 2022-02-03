@@ -13,8 +13,8 @@ import {
   Link,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { IArticle } from "../../../../types/article";
-import { useChangeLanguage } from "../../../hooks/change-language.hook";
+import { IArticle } from "../../../types/article";
+import { useChangeLanguage } from "../../../pages/hooks/change-language.hook";
 
 interface ArticleInfoProps {
   isOpen: boolean;

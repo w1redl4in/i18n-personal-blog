@@ -6,7 +6,7 @@ import {
   useColorMode,
   useDisclosure,
 } from "@chakra-ui/react";
-import { useChangeLanguage } from "../../../hooks/change-language.hook";
+import { useChangeLanguage } from "../../../pages/hooks/change-language.hook";
 import { NavbarDrawer } from "../drawer";
 import { IconButton } from "./icon-button";
 

@@ -1,6 +1,6 @@
 import { Button, Image, useColorModeValue, Text } from "@chakra-ui/react";
 import Link from "next/link";
-import { useChangeLanguage } from "../../../../hooks/change-language.hook";
+import { useChangeLanguage } from "../../../../pages/hooks/change-language.hook";
 
 interface IconButtonProps {
   locale: "pt" | "en" | "es";
