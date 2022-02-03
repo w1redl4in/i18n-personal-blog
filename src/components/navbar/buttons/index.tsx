@@ -24,8 +24,8 @@ export function NavbarButtons() {
     <>
       <NavbarDrawer isOpen={isOpen} onClose={onClose} />
       {isLessThan600px ? (
-        <Button>
-          <HamburgerIcon onClick={onOpen} />
+        <Button onClick={onOpen}>
+          <HamburgerIcon />
         </Button>
       ) : (
         <HStack>

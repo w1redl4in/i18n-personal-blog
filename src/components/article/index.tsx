@@ -9,6 +9,7 @@ import {
   Button,
   useDisclosure,
   Tooltip,
+  useMediaQuery,
 } from "@chakra-ui/react";
 import { IArticle } from "../../types/article";
 import { useChangeLanguage } from "../../hooks/change-language.hook";
@@ -21,6 +22,9 @@ interface ArticleProps {
 export function Article({ article }: ArticleProps) {
   const background = useColorModeValue("gray.100", "gray.700");
   const colorScheme = useColorModeValue("facebook", "whatsapp");
+
+  const [isLessThan600px] = useMediaQuery("(max-width: 600px)");
+  const [isLessThan800px] = useMediaQuery("(max-width: 800px)");
 
   const { isOpen, onClose, onOpen } = useDisclosure();
 
@@ -44,7 +48,12 @@ export function Article({ article }: ArticleProps) {
       >
         <Box>
           <Stack>
-            <Tooltip placement="right-end" label={title}>
+            <Tooltip
+              placement={
+                isLessThan600px || isLessThan800px ? "top" : "right-end"
+              }
+              label={title}
+            >
               <Heading isTruncated>{title}</Heading>
             </Tooltip>
             <Stack direction="row" alignItems="center">

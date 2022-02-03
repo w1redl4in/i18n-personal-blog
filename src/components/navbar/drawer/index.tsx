@@ -11,8 +11,8 @@ import {
   useColorMode,
   Stack,
 } from "@chakra-ui/react";
-import { buttons } from "../../../types/navbar.buttons";
 import { useChangeLanguage } from "../../../hooks/change-language.hook";
+import { buttons } from "../../../types/navbar.buttons";
 import { IconButton } from "../buttons/icon-button";
 
 interface NavbarDrawerProps {
@@ -25,12 +25,7 @@ export function NavbarDrawer({ isOpen, onClose }: NavbarDrawerProps) {
   const { t } = useChangeLanguage();
 
   return (
-    <Drawer
-      isOpen={isOpen}
-      placement="right"
-      onClose={onClose}
-      //   finalFocusRef={btnRef}
-    >
+    <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
       <DrawerOverlay />
       <DrawerContent>
         <DrawerCloseButton />
